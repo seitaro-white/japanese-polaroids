@@ -5,7 +5,7 @@
 | Command | Purpose |
 | --- | --- |
 | `npm test` | Vitest: logic and shipped-data checks (4 files, 25 scenarios) |
-| `npm run test:e2e` | Playwright: browser integration (8 specs, 28 scenarios) |
+| `npm run test:e2e` | Playwright: browser integration (8 specs, 29 scenarios) |
 | `npm run typecheck` | Check application, tests and configuration types |
 | `npm run build` | Check Vite bundling, not browser behaviour of the built site |
 
@@ -68,7 +68,7 @@ clear when browsing must be settled, since one movement has multiple legs.
 | Spec | Scenarios | Coverage |
 | --- | ---: | --- |
 | `smoke.spec.ts` | 2 | Default OSM container/decoded tile/initial marker, startup JS errors, zoom-20 upscaling from native zoom-19 tiles and attribution; configured Thunderforest selection and attribution. |
-| `map-layers.spec.ts` | 1 | Finished map with the full photo dataset and visible clusters; place/info markers at zoom 12; info overlay opens and closes via Escape/backdrop; captured JS errors. Marker opening uses synthetic click dispatch, not pointer hit testing. |
+| `map-layers.spec.ts` | 2 | Privacy-zone centre, 250 m radius and non-interactive red outline; finished map with the full photo dataset and visible clusters; place/info markers at zoom 12; info overlay opens and closes via Escape/backdrop; captured JS errors. Marker opening uses synthetic click dispatch, not pointer hit testing. |
 | `animation-completion.spec.ts` | 1 | Zero-distance opening motion can finish synchronously without preventing the intro card from appearing. |
 | `opening.spec.ts` | 5 | Live skip during plane and route phases; both captions and normal completion; map click versus drag; dismissal persistence followed by reload without animation requests, and About reopening. |
 | `intro-card.spec.ts` | 7 | First-visit flip/input lock, decoded welcome image, landing into one four-card pile and welcome insertion/shuffle; About reopening through three dismissal inputs; collapsed desktop handoff; desktop legend content/hover; real-touch portrait skip/intro/resting-pile handoff and legend toggle; scrollable landscape intro on first visit and reopen. |
