@@ -1,6 +1,33 @@
 import { test, expect } from './fixtures';
 import { captureLeafletMap, SEEN_KEY, SETUP_TIMEOUT } from './mapTestHarness';
 
+test('the privacy zone is a non-interactive red outline with a 250 metre radius', async ({ page }) => {
+    await captureLeafletMap(page);
+    await page.addInitScript(key => localStorage.setItem(key, '1'), SEEN_KEY);
+    await page.goto('/');
+    await expect(page.locator('.privacy-zone')).toHaveCount(1);
+
+    const zone = await page.evaluate(() => {
+        let result;
+        window.__leafletMap!.eachLayer(layer => {
+            if (layer instanceof window.L.Circle && layer.options.className === 'privacy-zone') {
+                result = { center: layer.getLatLng(), radius: layer.getRadius(), interactive: layer.options.interactive };
+                window.__leafletMap!.setView(layer.getLatLng(), 16, { animate: false });
+            }
+        });
+        return result;
+    });
+    expect(zone).toEqual({
+        center: { lat: 35.674460548050554, lng: 139.6555399346222 },
+        radius: 250,
+        interactive: false,
+    });
+    await expect(page.locator('.privacy-zone')).toHaveAttribute('stroke', 'red');
+    await expect(page.locator('.privacy-zone')).toHaveAttribute('fill', 'grey');
+    await expect(page.locator('.privacy-zone')).toHaveAttribute('fill-opacity', '0.6');
+    await expect(page.locator('.privacy-zone')).not.toHaveAttribute('d', 'M0 0');
+});
+
 test('the finished map renders real point data and info overlays dismiss through both inputs', async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));

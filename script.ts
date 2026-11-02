@@ -89,6 +89,17 @@ function initializeMap(mapId: string) {
             attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
     }
+    // Leaflet takes [latitude, longitude]; the privacy centre was supplied as [longitude, latitude].
+    L.circle([35.674460548050554, 139.6555399346222], {
+        radius: 250, // Metres, so the boundary stays geographically accurate at every zoom.
+        color: 'red',
+        weight: 2,
+        fillColor: 'grey',
+        fillOpacity: 0.6,
+        interactive: false,
+        className: 'privacy-zone',
+    }).addTo(map);
+
     return map;
 }
 
