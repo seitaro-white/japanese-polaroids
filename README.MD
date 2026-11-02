@@ -1,4 +1,23 @@
-## Japanese Polaroids
+<h1 align="center">📷 Japanese Polaroids 🗾</h1>
+
+<p align="center">
+  <em>An interactive map of everywhere I've been in Japan, and some of the photos I took along the way.</em>
+</p>
+
+<p align="center">
+  <a href="https://seitaro-white.github.io/japanese-polaroids/"><img src="https://img.shields.io/badge/live-demo-e8590c?style=for-the-badge" alt="Live demo"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/ci.yml"><img src="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/deploy.yml"><img src="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/deploy.yml/badge.svg" alt="Deploy to GitHub Pages"></a>
+  <img src="https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Leaflet-1.9-199900?logo=leaflet&logoColor=white" alt="Leaflet">
+  <img src="https://img.shields.io/badge/tested_with-Playwright-2ead33?logo=playwright&logoColor=white" alt="Playwright">
+</p>
+
+---
 
 A [map of everywhere I've been in Japan](https://seitaro-white.github.io/japanese-polaroids/) since January 2025 and some of the photos I've taken along the way.
 
