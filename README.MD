@@ -9,9 +9,17 @@ A [map of everywhere I've been in Japan](https://seitaro-white.github.io/travel-
 I only started photography as a hobby when I arrived in Japan. So many of the early photos on this map are very bad! However if you look at the timestamps you will hopefully see that I have improved somewhat in my more recent photography.
 
 <p align="center">
+  <img src="assets/photos/P3252726.webp" alt="A waterfall plunging down a cliff beside cherry blossom, March 2025" width="32%">
+  <img src="assets/photos/P5094512.webp" alt="Yamadera Temple with a red maple, May 2025" width="32%">
+  <img src="assets/photos/P5230440.webp" alt="A bronze Buddha framed by a circular halo, May 2025" width="32%">
+  <br>
   <img src="assets/photos/P5230469.webp" alt="A grey heron in flight above pine trees, May 2025" width="32%">
+  <img src="assets/photos/P9213161.webp" alt="A crowd of white fox statues, September 2025" width="32%">
+  <img src="assets/photos/PB060403.webp" alt="A bus stop beside a field of pampas grass with a mountain behind, November 2025" width="32%">
+  <br>
   <img src="assets/photos/P1271116.webp" alt="Mount Fuji with a band of cloud, January 2026" width="32%">
   <img src="assets/photos/P2232898.webp" alt="Cherry blossom framing Kumamoto Castle, February 2026" width="32%">
+  <img src="assets/photos/P5255963.webp" alt="Temple roofs above a field of coloured lanterns, May 2026" width="32%">
 </p>
 
 ## How?
