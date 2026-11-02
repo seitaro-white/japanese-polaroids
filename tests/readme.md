@@ -4,7 +4,7 @@
 
 | Command | Purpose |
 | --- | --- |
-| `npm test` | Vitest: logic and shipped-data checks (4 files, 25 scenarios) |
+| `npm test` | Vitest: logic and shipped-data checks (4 files, 24 scenarios) |
 | `npm run test:e2e` | Playwright: browser integration (8 specs, 29 scenarios) |
 | `npm run typecheck` | Check application, tests and configuration types |
 | `npm run build` | Check Vite bundling, not browser behaviour of the built site |
@@ -26,9 +26,12 @@ configured retry. Use `--retries=0` when validating changes without retry maskin
 | `fetchGeoJson.test.ts` | 3 | Requested path reaches fetch; parsed JSON returns successfully; HTTP and JSON-parsing errors are reported. Uses real `Response` objects, not Leaflet layer construction. |
 | `favouritePhotos.test.ts` | 14 | Favourite flags and independently missing filename/geometry/properties; shuffle returns a reordered copy without losing items or mutating input; welcome/favourite loading and no-favourites/missing-welcome cases. |
 | `markerDrop.test.ts` | 3 | Empty, single-marker and multiple-marker schedules across 0–1.5 seconds. Concrete expected values, not a copy of the spacing formula. Not random assignment or CSS motion. |
-| `dataIntegrity.test.ts` | 5 | Three complete point-dataset audits; nonempty favourites with display images; all explicit emoji mappings correspond to current categories. Soft assertions report multiple invalid records with filenames/indices; asset/mapping failures list all offending names. |
+| `dataIntegrity.test.ts` | 4 | Three complete point-dataset audits; nonempty favourites with display images. Soft assertions report multiple invalid records with filenames/indices; asset failures list all offending names. |
 
 ### Data-validation limits
+
+- Emoji mappings may be unused in the current dataset; backend filtering can
+  remove categories without making their mappings invalid.
 
 - Point checks cover 1,009 photos, 1,091 places and 28 information records.
   Property keys must exist, but values need not be meaningful. Feature/geometry

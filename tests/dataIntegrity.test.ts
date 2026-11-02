@@ -2,7 +2,6 @@ import { existsSync, readFileSync } from 'node:fs';
 import type { FeatureCollection, Point } from 'geojson';
 import { expect, it } from 'vitest';
 import { isFavouritePhoto } from '../src/features/carousel/favouritePhotos';
-import { placeEmojis } from '../src/features/markers/placeEmojis';
 import type { Photos } from '../src/types/geojson';
 
 type PointCollection = FeatureCollection<Point | null, Record<string, unknown> | null>;
@@ -44,13 +43,4 @@ it('the favourite collection is nonempty and every favourite has a display image
     const missingImages = favourites.map(photo => photo.properties.filename)
         .filter(filename => !existsSync(new URL(`../public/assets/photos/display/${filename}.webp`, import.meta.url)));
     expect(missingImages, 'favourites missing display images').toEqual([]);
-});
-
-it('every explicit emoji mapping is used by a place category', () => {
-    const places = loadPoints<PointCollection>('places.geojson');
-    const categories = new Set(places.features.map(feature => feature.properties?.placeList));
-    // Unmapped categories intentionally use the fallback pin; only stale
-    // explicit mappings are errors. Report all of their names together.
-    const unusedKeys = Object.keys(placeEmojis).filter(key => !categories.has(key));
-    expect(unusedKeys, 'emoji mappings with no matching place category').toEqual([]);
 });
