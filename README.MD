@@ -2,12 +2,19 @@
 
 A [map of everywhere I've been in Japan](https://seitaro-white.github.io/travel-tracker-frontend/) since January 2025 and some of the photos I've taken along the way.
 
-<gif of animation tracks loading> <gif of opening a nice photo>
+<p align="center">
+  <img src="assets/gif/demo.gif" alt="The map loading: flight and travel routes animate across Japan, then a photo opens as a polaroid" width="720">
+</p>
 
-I only started photography as a hobby when I arrived in Japan. So many of the early photos on this map are very bad! However if you look at the timestamps you will hopefully see that I have improved somewhat in my more recent photography. 
+I only started photography as a hobby when I arrived in Japan. So many of the early photos on this map are very bad! However if you look at the timestamps you will hopefully see that I have improved somewhat in my more recent photography.
 
+<p align="center">
+  <img src="assets/photos/P5230469.webp" alt="A grey heron in flight above pine trees, May 2025" width="32%">
+  <img src="assets/photos/P1271116.webp" alt="Mount Fuji with a band of cloud, January 2026" width="32%">
+  <img src="assets/photos/P2232898.webp" alt="Cherry blossom framing Kumamoto Castle, February 2026" width="32%">
+</p>
 
-How? 
+## How?
 
 | | |
 |---|---|
