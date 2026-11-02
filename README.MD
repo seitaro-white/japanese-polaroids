@@ -1,4 +1,23 @@
-## Japanese Polaroids
+<h1 align="center">Japanese Polaroids</h1>
+
+<p align="center">
+  <em>An interactive map of everywhere I've been in Japan, and some of the photos I took along the way.</em>
+</p>
+
+<p align="center">
+  <a href="https://seitaro-white.github.io/japanese-polaroids/"><img src="https://img.shields.io/badge/live-demo-e8590c?style=for-the-badge" alt="Live demo"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/ci.yml"><img src="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/deploy.yml"><img src="https://github.com/seitaro-white/japanese-polaroids/actions/workflows/deploy.yml/badge.svg" alt="Deploy to GitHub Pages"></a>
+  <img src="https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Leaflet-1.9-199900?logo=leaflet&logoColor=white" alt="Leaflet">
+  <img src="https://img.shields.io/badge/tested_with-Playwright-2ead33?logo=playwright&logoColor=white" alt="Playwright">
+</p>
+
+---
 
 A [map of everywhere I've been in Japan](https://seitaro-white.github.io/japanese-polaroids/) since January 2025 and some of the photos I've taken along the way.
 
@@ -30,5 +49,5 @@ I only started photography as a hobby when I arrived in Japan. So many of the ea
 | **The Lenses** | 2025 photos mostly taken on the [M.Zuiko Digital 14-42mm f/3.5-5.6](https://explore.omsystem.com/c/en/m-zuiko-14-42mm-f3-5-5-6-ii-r) and [M.Zuiko Digital 40-150mm f/4-5.6 R](https://jp.omsystem.com/product/lens/zoom/mzuiko/40-150_40-56_r/index.html) kit lenses. Since 2026 I've switched to mainly using the (now sadly discontinued) [Panasonic Lumix G 20mm f/1.7 ASPH](https://panasonic.jp/dc/products/H-H020.html), which I absolutely adore. For hiking/outdoors photography I'm generally using a weathersealed [M.ZUIKO DIGITAL ED 12-45mm F4.0 PRO](https://jp.omsystem.com/product/lens/zoom/pro/12-45_4pro/index.html). |
 | **Editing** | [Darktable](https://www.darktable.org/), an OS alternative to Adobe Lightroom - I generally shoot in raw. I have become an increasingly minimal (i.e. lazy) editor and generally just apply a set of LUT film simulations + light retouching. |
 | **GPS logging** | [Geotag Photos Pro](https://www.geotagphotos.net/) for tagging my photos with coordinate data and exporting GPX data to... |
-| **GIS** | [QGIS](https://www.qgis.org/), which I ***hate*** - It slow, clunky and the UI is truly horrible. ArcGIS however cost £1,000 a year. So I use QGIS to clean up my GPX trails and select which photos I want displayed. |
+| **GIS** | [QGIS](https://www.qgis.org/), which I ***hate*** - It's slow, clunky and the UI is truly horrible. ArcGIS however cost £1,000 a year. So I use QGIS to clean up my GPX trails and select which photos I want displayed. |
 | **The App** | A small pipeline to put everything together, link up the animation trails at the start. The UI is vanilla typescript. |
