@@ -1,6 +1,6 @@
 ## Japanese Polaroids
 
-A [map of everywhere I've been in Japan](https://seitaro-white.github.io/travel-tracker-frontend/) since January 2025 and some of the photos I've taken along the way.
+A [map of everywhere I've been in Japan](https://seitaro-white.github.io/japanese-polaroids/) since January 2025 and some of the photos I've taken along the way.
 
 <p align="center">
   <img src="assets/gif/demo.gif" alt="The map loading: flight and travel routes animate across Japan, then a photo opens as a polaroid" width="720">
