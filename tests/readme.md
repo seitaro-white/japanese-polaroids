@@ -35,7 +35,7 @@ configured retry. Use `--retries=0` when validating changes without retry maskin
   types and longitude/latitude ranges are not fully validated.
 - Null geometry remains allowed. The known blank photo at index 748 passes the
   schema checks; new null records would also pass. The data issue is tracked in
-  `todo.MD`. Synthetic selection tests verify that unusable photos are excluded
+  `docs/todo.MD`. Synthetic selection tests verify that unusable photos are excluded
   from favourites, without depending on a particular data index.
 - All located point records use strict `Number.isFinite` checks, including
   favourites; there is no separate duplicate favourite-coordinate audit.

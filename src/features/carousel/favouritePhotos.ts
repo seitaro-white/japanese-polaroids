@@ -15,7 +15,7 @@ const PHOTOS_FILE = 'assets/points/photos.geojson';
  * needs to display it: a filename to build the image path from, and
  * coordinates to fly the map to.
  *
- * The blank record at photos.geojson index 748 (tracked in todo.MD) has null
+ * The blank record at photos.geojson index 748 (tracked in docs/todo.MD) has null
  * properties and null geometry, so it fails these checks and drops out here
  * without needing a special case.
  *
