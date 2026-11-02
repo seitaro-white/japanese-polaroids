@@ -28,7 +28,7 @@ it.each([
         for (const key of requiredKeys) {
             expect.soft(feature.properties, label).toHaveProperty(key);
         }
-        // Preserve the existing null-geometry policy (known issue in todo.MD).
+        // Preserve the existing null-geometry policy (known issue in docs/todo.MD).
         if (feature.geometry === null) return;
         const coordinates = feature.geometry?.coordinates;
         expect.soft(Array.isArray(coordinates), `${label}: coordinate array`).toBe(true);

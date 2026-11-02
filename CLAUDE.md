@@ -55,7 +55,7 @@ See [tests/readme.md](tests/readme.md) for the current inventory, behavioural co
 
 **Leaflet has no public map registry** — `document.getElementById('map')._leaflet_map` does NOT exist in Leaflet 1.9.4. The `window.L` interception pattern (in `captureLeafletMap()` in `mapTestHarness.ts`) is the correct way to get programmatic access to the map in tests.
 
-### Known data bug (tracked in todo.MD)
+### Known data bug (tracked in docs/todo.MD)
 `public/assets/points/photos.geojson` feature index 748 is a blank record (`geometry: null`, all properties null). The schema tests skip coordinates for null geometries; favourite-selection tests reject unusable photo metadata.
 
 ## Ad hoc browser testing with Browserless
