@@ -1,8 +1,9 @@
 <h1 align="center">Japanese Polaroids</h1>
 
 <p align="center">
-  <em>An interactive map of everywhere I've been in Japan, and some of the photos I took along the way.</em>
+<em>A <a href="https://seitaro-white.github.io/japanese-polaroids/">map of everywhere I've been in Japan</a> since January 2025 and some of the photos I've taken along the way.</em>
 </p>
+
 
 <p align="center">
   <a href="https://seitaro-white.github.io/japanese-polaroids/"><img src="https://img.shields.io/badge/live-demo-e8590c?style=for-the-badge" alt="Live demo"></a>
@@ -10,9 +11,6 @@
 
 
 ---
-<p align="center">
-A <a href="https://seitaro-white.github.io/japanese-polaroids/">map of everywhere I've been in Japan</a> since January 2025 and some of the photos I've taken along the way.
-</p>
 
 <p align="center">
   <img src="assets/gif/demo.gif" alt="The map loading: flight and travel routes animate across Japan, then a photo opens as a polaroid" width="720">
