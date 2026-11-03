@@ -11,7 +11,7 @@
 
 ---
 <p align="center">
-A [map of everywhere I've been in Japan](https://seitaro-white.github.io/japanese-polaroids/) since January 2025 and some of the photos I've taken along the way.
+A <a href="https://seitaro-white.github.io/japanese-polaroids/">map of everywhere I've been in Japan</a> since January 2025 and some of the photos I've taken along the way.
 </p>
 
 <p align="center">
